@@ -5,6 +5,7 @@ pushd lib/fonts/
 curl -O -L "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/webfonts/fa-brands-400.ttf"
 curl -O -L "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/webfonts/fa-regular-400.ttf"
 curl -O -L "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/webfonts/fa-solid-900.ttf"
+curl -O -L "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/webfonts/fa-light-900.ttf"
 
 popd
 
