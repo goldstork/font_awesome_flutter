@@ -9,7 +9,7 @@ curl -O -L "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/we
 
 popd
 
-curl -o /tmp/icons.json "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/metadata/icons.json"
+curl -o /tmp/icons.json "https://raw.githubusercontent.com/lafrasc/Font-Awesome-Pro-5/master/fontawesome-pro-5.7.0-desktop/metadata/icons.json"
 
 dart ./tool/generate_font.dart /tmp/icons.json
 dart ./tool/generate_example.dart /tmp/icons.json
