@@ -11,6 +11,15 @@ class IconDataBrands extends IconData {
         );
 }
 
+class IconDataLight extends IconData {
+  const IconDataLight(int codePoint)
+      : super(
+          codePoint,
+          fontFamily: 'FontAwesomeLight',
+          fontPackage: 'font_awesome_flutter',
+        );
+}
+
 class IconDataSolid extends IconData {
   const IconDataSolid(int codePoint)
       : super(
