@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:font_awesome_flutter_example/icons.dart';
+
+import 'icons.dart';
 
 void main() {
   runApp(new FontAwesomeGalleryApp());
@@ -97,7 +98,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
       title: new Text("Font Awesome Flutter Gallery"),
       actions: [
         new IconButton(
-            icon: new Icon(FontAwesomeIcons.search),
+            icon: new Icon(FontAwesomeIcons.searchRegular),
             onPressed: () {
               ModalRoute.of(context).addLocalHistoryEntry(
                 new LocalHistoryEntry(
@@ -121,7 +122,7 @@ class FontAwesomeGalleryHomeState extends State<FontAwesomeGalleryHome> {
   AppBar _searchBar(BuildContext context) {
     return new AppBar(
       leading: new IconButton(
-        icon: new Icon(FontAwesomeIcons.arrowLeft),
+        icon: new Icon(FontAwesomeIcons.arrowLeftRegular),
         onPressed: () {
           setState(
             () {

@@ -20,15 +20,24 @@ void main(List<String> arguments) {
     List<String> styles = (icon['styles'] as List).cast<String>();
 
     if (styles.length > 1) {
-      if (styles.contains('regular')) {
-        styles.remove('regular');
-        iconDefinitions[iconName] = generateExampleIcon(iconName);
+      if (styles.contains('solid')) {
+        styles.remove('solid');
+        iconDefinitions['${iconName}Solid'] = generateExampleIcon('${iconName}Solid');
       }
 
-      for (String style in styles) {
-        String name = '${style}_$iconName';
-        iconDefinitions[name] = generateExampleIcon(name);
+      if (styles.contains('regular')) {
+        styles.remove('regular');
+        iconDefinitions['${iconName}Regular'] = generateExampleIcon('${iconName}Regular');
       }
+
+      if (styles.contains('light')) {
+        styles.remove('light');
+        iconDefinitions['${iconName}Light'] = generateExampleIcon('${iconName}Light');
+      }
+      //   for (String style in styles) {
+      //     String name = '${style}_$iconName';
+      //     iconDefinitions[name] = generateExampleIcon(name);
+      //   }
     } else {
       iconDefinitions[iconName] = generateExampleIcon(iconName);
     }

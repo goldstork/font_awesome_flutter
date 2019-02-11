@@ -23,18 +23,27 @@ void main(List<String> arguments) {
     if (styles.length > 1) {
       if (styles.contains('regular')) {
         styles.remove('regular');
-        iconDefinitions[iconName] = generateIconDefinition(
-          iconName,
+        iconDefinitions['${iconName}Regular'] = generateIconDefinition(
+          '${iconName}Regular',
           'regular',
           unicode,
         );
       }
 
-      for (String style in styles) {
-        String name = '${style}_$iconName';
-        iconDefinitions[name] = generateIconDefinition(
-          name,
-          styles.first,
+      if (styles.contains('light')) {
+        styles.remove('light');
+        iconDefinitions['${iconName}Light'] = generateIconDefinition(
+          '${iconName}Light',
+          'light',
+          unicode,
+        );
+      }
+
+      if (styles.contains('solid')) {
+        styles.remove('solid');
+        iconDefinitions['${iconName}Solid'] = generateIconDefinition(
+          '${iconName}Solid',
+          'solid',
           unicode,
         );
       }
