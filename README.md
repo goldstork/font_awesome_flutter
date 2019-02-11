@@ -2,10 +2,11 @@
 
 The [Font Awesome](http://fontawesome.io/icons/) Icon pack available as set of Flutter Icons.
 
-Based on Font Awesome 5.5. Includes all free icons:
+Based on Font Awesome 5.7.0 Pro Includes all free icons:
 
-  * Regular
   * Solid
+  * Regular
+  * Light
   * Brands
 
 ## Installation
@@ -25,7 +26,7 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return new IconButton(
       // Use the FontAwesomeIcons class for the IconData
-      icon: new Icon(FontAwesomeIcons.gamepad), 
+      icon: new Icon(FontAwesomeIcons.gamepadRegular), 
       onPressed: () { print("Pressed"); }
      );
   }
